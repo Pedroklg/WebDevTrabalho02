@@ -4,7 +4,7 @@ import { Drawer, List, ListItem, ListItemText, Box, Tooltip, Divider } from '@mu
 import { Home as HomeIcon, FormatListBulleted as FormatListBulletedIcon, Create as CreateIcon, EditNote as EditNoteIcon } from '@mui/icons-material';
 import { palette } from '../theme';
 
-const { medDarkCyan } = palette;
+const { defaultGreen } = palette;
 
 interface DrawerListProps {
   isOpen: boolean;
@@ -50,7 +50,7 @@ const DrawerList: React.FC<DrawerListProps> = ({ isOpen, isMobile, drawerWidth, 
           boxSizing: 'border-box',
           bgcolor: 'white',
           overflow: 'hidden',
-          color: medDarkCyan,
+          color: defaultGreen,
           mt: 6,
         },
       }}
@@ -66,8 +66,8 @@ const DrawerList: React.FC<DrawerListProps> = ({ isOpen, isMobile, drawerWidth, 
               component={Link}
               to="/"
               sx={{
-                bgcolor: selected === 'Home' ? medDarkCyan : 'white',
-                color: selected === 'Home' ? 'white' : medDarkCyan,
+                bgcolor: selected === 'Home' ? defaultGreen : 'white',
+                color: selected === 'Home' ? 'white' : defaultGreen,
                 justifyContent: isOpen ? 'initial' : 'center',
                 px: 2.5,
                 my: 4,
@@ -82,8 +82,8 @@ const DrawerList: React.FC<DrawerListProps> = ({ isOpen, isMobile, drawerWidth, 
               component={Link}
               to="/patients"
               sx={{
-                bgcolor: selected === 'List' ? medDarkCyan : 'white',
-                color: selected === 'List' ? 'white' : medDarkCyan,
+                bgcolor: selected === 'List' ? defaultGreen : 'white',
+                color: selected === 'List' ? 'white' : defaultGreen,
                 justifyContent: isOpen ? 'initial' : 'center',
                 px: 2.5,
                 my: 4,
@@ -98,8 +98,8 @@ const DrawerList: React.FC<DrawerListProps> = ({ isOpen, isMobile, drawerWidth, 
               component={Link}
               to="/patients/new"
               sx={{
-                bgcolor: selected === 'Create' ? medDarkCyan : 'white',
-                color: selected === 'Create' ? 'white' : medDarkCyan,
+                bgcolor: selected === 'Create' ? defaultGreen : 'white',
+                color: selected === 'Create' ? 'white' : defaultGreen,
                 justifyContent: isOpen ? 'initial' : 'center',
                 px: 2.5,
                 my: 4,
@@ -114,8 +114,8 @@ const DrawerList: React.FC<DrawerListProps> = ({ isOpen, isMobile, drawerWidth, 
               component={Link}
               to="/patients/edit/"
               sx={{
-                bgcolor: selected === 'Edit' ? medDarkCyan : 'white',
-                color: selected === 'Edit' ? 'white' : medDarkCyan,
+                bgcolor: selected === 'Edit' ? defaultGreen : 'white',
+                color: selected === 'Edit' ? 'white' : defaultGreen,
                 justifyContent: isOpen ? 'initial' : 'center',
                 px: 2.5,
                 my: 4,

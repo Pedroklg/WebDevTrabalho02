@@ -1,17 +1,17 @@
 import { createTheme } from '@mui/material/styles';
 
 const palette = {
-  medBlue: "#215889",
-  medDarkCyan: "#174772"
+  defaultOrange: "#FF8200",
+  defaultGreen: "#0D3501"
 }
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: palette.medDarkCyan,
+      main: palette.defaultGreen,
     },
     secondary: {
-      main: palette.medBlue,
+      main: palette.defaultOrange,
     },
     background: {
       default: '#fff',
