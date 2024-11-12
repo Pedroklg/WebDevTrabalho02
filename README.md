@@ -21,18 +21,25 @@ Certifique-se de ter **Node.js**, **npm** e **Docker** instalados:
 ## ⚙️ Como Rodar o Projeto
 
 ### 1. Clonar o Repositório
+
+```bash
 git clone https://github.com/Pedroklg/WebDevTrabalho02.git
 cd WebDevTrabalho02
+```
 2. Configurar o Backend (API REST)
+```bash
 cd backend
 cp .env.example .env
 # Configurar variáveis do banco de dados no arquivo .env
 npm install
 npm run dev
+```
 3. Configurar o Frontend (ReactJS)
+```bash
 cd frontend
 npm install
 npm run dev
+```
 4. Acessar a Aplicação
 Abra o navegador e acesse: http://localhost:5173
 
@@ -49,7 +56,18 @@ DELETE	/patients/:id	Deleta um paciente pelo ID
 Exemplo de Requisição
 GET /patients
 
+json
+Copy code
+[
+  {
+    "id": 1,
+    "name": "João Silva",
+    "email": "joao@example.com",
+    "birthdate": "1990-05-20",
+    "address": "Rua A, 123, Cidade B"
+  }
+]
 👥 Equipe
 Pedro Gabriel Cordeiro e Silva
-Gabriel da Silva Hass
+Gabriel da Silva Haas
 Romeu Fuchs Ferreira
