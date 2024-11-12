@@ -43,31 +43,26 @@ npm run dev
 4. Acessar a Aplicação
 Abra o navegador e acesse: http://localhost:5173
 
-📋 Endpoints da API
+# 📋 Endpoints da API
 Aqui estão os detalhes das rotas disponíveis para o gerenciamento de pacientes:
 
-Método	Rota	Descrição
-GET	/patients	Lista todos os pacientes
-GET	/patients/:id	Obtém detalhes de um paciente pelo ID
-GET	/patientsSamples	Retorna uma amostra de pacientes (dados fictícios)
-POST	/patients	Cria um novo paciente
-PUT	/patients/:id	Atualiza as informações de um paciente
-DELETE	/patients/:id	Deleta um paciente pelo ID
-Exemplo de Requisição
-GET /patients
+  GET	/patients	Lista todos os pacientes
+  
+  GET	/patients/:id	Obtém detalhes de um paciente pelo ID
+  
+  GET	/patientsSamples	Retorna uma amostra de pacientes (dados fictícios)
+  
+  POST	/patients	Cria um novo paciente
+  
+  PUT	/patients/:id	Atualiza as informações de um paciente
+  
+  DELETE	/patients/:id	Deleta um paciente pelo ID
+  
 
-json
-Copy code
-[
-  {
-    "id": 1,
-    "name": "João Silva",
-    "email": "joao@example.com",
-    "birthdate": "1990-05-20",
-    "address": "Rua A, 123, Cidade B"
-  }
-]
-👥 Equipe
+
+# 👥 Equipe
 Pedro Gabriel Cordeiro e Silva
+
 Gabriel da Silva Haas
+
 Romeu Fuchs Ferreira
