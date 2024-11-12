@@ -29,8 +29,7 @@ cd WebDevTrabalho02
 2. Configurar o Backend (API REST)
 ```bash
 cd backend
-cp .env.example .env
-# Configurar variáveis do banco de dados no arquivo .env
+# Configurar variáveis do banco de dados no arquivo .env se rodar diretamente o backend(nâo pelo docker)
 npm install
 npm run dev
 ```
